@@ -6,9 +6,7 @@ class MyClass
 
     public function __construct(string $userName){
 
-        $mySanitiser = new MySanitiser();
-
-        $this->userName = $mySanitiser->sanitise($userName);
+        $this->userName = htmlspecialchars($userName, ENT_QUOTES);
     }
 
     /**
