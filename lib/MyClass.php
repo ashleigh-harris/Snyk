@@ -6,7 +6,7 @@ class MyClass
 
     public function __construct(string $userName){
 
-        $this->userName = htmlspecialchars($userName, ENT_QUOTES);
+        $this->userName = $userName;
     }
 
     /**
@@ -14,6 +14,6 @@ class MyClass
      */
     public function getUserName(): string
     {
-        return $this->userName;
+        return htmlspecialchars($this->userName, ENT_QUOTES);
     }
 }
