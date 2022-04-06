@@ -1,9 +1,7 @@
 <?php
 
-$mySanitiser = new MySanitiser();
-
-$myString = $mySanitiser->sanitise("Hello World");
+$mySuperAwesomeClass = new MyClass($_GET["u"]);
 
 ?>
 
-<p><?php echo $myString; ?></p>
+<h1>Hello <?php echo $mySuperAwesomeClass->getUserName(); ?></h1>
