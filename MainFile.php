@@ -2,4 +2,8 @@
 
 $mySanitiser = new MySanitiser();
 
-echo($mySanitiser->sanitise("Hello World"));
+$myString = $mySanitiser->sanitise("Hello World");
+
+?>
+
+<p><?php echo $myString; ?></p>
