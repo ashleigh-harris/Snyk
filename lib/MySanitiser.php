@@ -8,6 +8,8 @@ class MySanitiser
 
     public function sanitise(string $input){
 
-        return htmlspecialchars($input, ENT_QUOTES);
+        $sanitisedOutput = htmlspecialchars($input, ENT_QUOTES);
+
+        return $sanitisedOutput;
     }
 }
